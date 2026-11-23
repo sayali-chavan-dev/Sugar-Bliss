@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sugar Bliss</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="Master.css">
+
+	<style type="text/css">
+		.carousel-inner img {
+			width: 100%;
+			height: 460px;
+		}
+
+		#zoom {
+			transition: transform 0.5s ease;
+		}
+
+		#zoom:hover {
+			transform: scale(1.1);
+		}
+
+		#link:hover {
+			font-size: 25px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-sm-5 col-md-6 col-lg-6 col-xl-8">
+					<img src="img/logo.png" class="img-fluid mx-auto" height="60" width="170">
+				</div>
+
+				<div class="col-6 col-sm-7 col-md-6 col-lg-6 col-xl-4">
+					<form class="form-inline" style="margin-top: 50px; margin-left: 100px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-success" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="navbar navbar-expand-md  navbar-dark sticky-top" style="background:#421435;">
+		<div class="container">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active" style="border-bottom: 3px solid #de96f2; font-size: 17px;"><a
+							class="nav-link" href="index.html" style="width: 110px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html"
+							style="width: 160px; text-align: center;">About</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="cakes.html"
+							style="width: 160px; text-align: center;">
+							Cakes</a></li>
+					<li class="nav-item"><a class="nav-link" href="pastries.html"
+							style="width: 130px; text-align: center;">Pastries</a></li>
+					<li class="nav-item"><a class="nav-link" href="" style="width: 110px; text-align: center;">Cupcakes
+						</a></li>
+					<li class="nav-item"><a class="nav-link" href="gallery.html"
+							style="width: 160px; text-align: center;">Gallery</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html"
+							style="width: 110px; text-align: center;">Contact
+							Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section>
+		<div class="container">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+					<li data-target="#demo" data-slide-to="3"></li>
+				</ul>
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<a href="HealthyFood.html"><img src="img/slider1.jpg" alt="Theme Cakes" width="1100"
+								height="800"></a>
+						<div class="carousel-caption">
+							<h1><a href="HealthyFood.html" style="color: white;">Theme Cakes</a></h1>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<a href="GoodHabit.html"><img src="img/slider2.jpg" alt="New York Cake" width="1100"
+								height="800"></a>
+						<div class="carousel-caption">
+							<h1><a href="GoodHabit.html" style="color: white;">New York Cake</a></h1>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<a href="Yoga.html"><img src="img/slider3.jpg" alt="Pastries" width="1100" height="800"></a>
+						<div class="carousel-caption">
+							<h1><a href="Yoga.html" style="color: white;">Pastries</a></h1>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<a href="Yoga.html"><img src="img/slider4.jpg" alt="Cupcake" width="1100" height="800"></a>
+						<div class="carousel-caption">
+							<h1><a href="Yoga.html" style="color: white;">Cupcake</a></h1>
+						</div>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div><br><br>
+
+
+			<div class="container">
+				<br>
+				<hr><br>
+
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+						<div class="card bg_card_cake mb-3" style="max-width: 18rem;  padding: 10px;">
+							<img id="zoom" src="img/theme_cake_card.jpeg"
+								class="img-thumbnail img-fluid mx-auto d-block" width="200" height="100">
+							<div class="card-body">
+								<h5 class="card-title">Theme Cakes</h5>
+								<p class="card-text">We design beautiful, customised theme cakes to make your special
+									moments unforgettable birthdays to anniversary<a href="cakes.html"
+										style="color:#421435;"> <u> Read More...</u></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="card bg_card_cake mb-3" style="max-width: 18rem;  padding: 10px;">
+							<img id="zoom" src="img/fresh_pastries_card.jpg"
+								class="img-thumbnail img-fluid mx-auto d-block" alt="..." width="200" height="200">
+							<div class="card-body">
+								<h5 class="card-title">Fresh Pastries</h5>
+								<p class="card-text">Enjoy freshly baked, delicious pastries made every day with premium
+									ingredients, creamy textures, and irresistible flavours. Every bite brings you
+									freshness <br><a href="pastries.html"
+										style="color:#421435;"><u>Read More...</u></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="card bg_card_cake mb-3" style="max-width: 18rem; padding: 10px;">
+							<img id="zoom" src="img/cupcakes_card.jpeg" class="img-thumbnail img-fluid mx-auto d-block"
+								alt="..." width="200" height="200">
+							<div class="card-body">
+								<h5 class="card-title">Bestseller Cupcakes</h5>
+								<p class="card-text">Enjoy our adorable, freshly baked cupcakes with creative designs,
+									delicious flavours, and creamy toppings.<br> Little treats, big smiles – all at
+									pocket-friendly!<a href="cupcakes.html"
+										style="color:#421435;"><u> Read More...</u></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="card bg_card_cake mb-3" style="max-width: 18rem;  padding: 10px;">
+							<img id="zoom" src="img/offers_card.png" class="img-thumbnail img-fluid mx-auto d-block"
+								alt="..." width="200" height="200">
+							<div class="card-body">
+								<h5 class="card-title">Offers</h5>
+								<p class="card-text">Sweetness Overloaded – Grab Your Deals!
+									Here is the Sugar Bliss – Our Sweet Offers shop section design.<br><br>
+									You can use these offer descriptions
+									<a href="offers.html" style="color:  #421435;"><u>Read More...</u></a>
+									<!--- Birthday Special: Get 20% OFF on birthday cakes.<br>
+									- Cupcake Combo: Buy 5 cupcakes and get 1 FREE.<br>
+									- Brownie Treat: Flat 15% OFF on brownie boxes.<br>
+									- Sweet Combo Box: Special dessert hamper at just ₹499.<br>-->
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h4 class="quote" style="text-align: justify;"><b>"The art of baking is all about a balancing act between
+								time, temperature, and ingredients.<br>
+								Sugar Bliss – Bake It Sweet, Make It Special!"</b></h4>
+						<h5 align="right">- M. F. K. Fisher </h5>
+					</div>
+				</div>
+			</div>
+	</section><br>
+
+	<footer style="background:#5f374798;">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>@ 2021 Sugar Bliss . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sugar Bliss</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="Master.css">
+	<script type="text/javascript" src="Contact.js"></script>
+
+	<style type="text/css">
+		label {
+			font-weight: bolder;
+			font-size: 18px;
+		}
+
+		span {
+			font-style: italic;
+			color: red;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/logo.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-success" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-expand-md  navbar-dark sticky-top" style="background:#421435;">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html"
+							style="width: 110px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="" style="width: 160px; text-align: center;">About</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="" style="width: 160px; text-align: center;">
+							Cakes</a></li>
+					<li class="nav-item"><a class="nav-link" href=""
+							style="width: 130px; text-align: center;">Pastries</a></li>
+					<li class="nav-item"><a class="nav-link" href="" style="width: 110px; text-align: center;">Cupcakes
+						</a></li>
+					<li class="nav-item"><a class="nav-link" href="gallery.html"
+							style="width: 160px; text-align: center;">Gallery</a></li>
+					<li class="nav-item active" style="border-bottom: 3px solid #de96f2; font-size: 17px;"><a
+							class="nav-link" href="contact.html" style="width: 110px; text-align: center;">Contact
+							Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav><br>
+
+	<section>
+
+		<div class="container">
+			<div class="contact" style="border:3px solid  #5f374798; border-radius: 20px;">
+
+				<div class="container">
+
+					<div class="cake-form">
+
+						<h2>🎂 Customize Your Cake</h2>
+
+						<p class="subtitle">
+							Design your dream cake with Sugar Bliss!
+							Make every celebration sweeter.
+						</p>
+
+						<form id="cakeForm">
+
+							<!-- Customer Details -->
+							<h5 class="mb-3">Customer Details</h5>
+
+							<div class="row mb-3">
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Full Name</label>
+									<input type="text" class="form-control" placeholder="Enter your name" required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Email Address</label>
+									<input type="email" class="form-control" placeholder="Enter your email" required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Phone Number </label>
+									<input type="tel" class="form-control" placeholder="10 digit mobile number"
+										pattern="[6-9][0-9]{9}" required>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Delivery Date</label>
+									<input type="date" class="form-control" id="deliveryDate" required>
+								</div>
+
+							</div>
+
+							<hr>
+
+							<!-- Cake Details -->
+							<h5 class="mb-3">Cake Details</h5>
+
+							<div class="row mb-3">
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Cake Flavour</label>
+
+									<select class="form-select" required>
+										<option value="">Select Flavour</option>
+										<option>Chocolate</option>
+										<option>Vanilla</option>
+										<option>Black Forest</option>
+										<option>Red Velvet</option>
+										<option>Butterscotch</option>
+										<option>Strawberry</option>
+										<option>Blueberry</option>
+									</select>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Cake Size</label>
+
+									<select class="form-select" required>
+										<option value="">Select Size</option>
+										<option>Half Kg</option>
+										<option>1 Kg</option>
+										<option>1.5 Kg</option>
+										<option>2 Kg</option>
+										<option>3 Kg</option>
+									</select>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Cake Shape</label>
+
+									<select class="form-select" required>
+										<option value="">Select Shape</option>
+										<option>Round</option>
+										<option>Square</option>
+										<option>Heart</option>
+										<option>Rectangle</option>
+										<option>Custom Shape</option>
+									</select>
+								</div>
+
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Cake Theme</label>
+
+									<select class="form-select" required>
+										<option value="">Select Theme</option>
+										<option>Birthday Theme</option>
+										<option>Wedding Theme</option>
+										<option>Anniversary Theme</option>
+										<option>Cartoon Theme</option>
+										<option>Baby Shower Theme</option>
+										<option>Floral Theme</option>
+										<option>Other</option>
+									</select>
+								</div>
+
+							</div>
+
+							<hr>
+
+							<!-- Additional Details -->
+							<h5 class="mb-3">Additional Details</h5>
+
+							<div class="mb-3">
+								<label class="form-label">
+									Cake Message
+								</label>
+
+								<input type="text" class="form-control" placeholder="Example: Happy Birthday">
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label">
+									Upload Cake Reference Image
+								</label>
+
+								<input type="file" class="form-control" accept="image/*">
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label">
+									Special Instructions
+								</label>
+
+								<textarea class="form-control" rows="4"
+									placeholder="Tell us your cake design ideas..."></textarea>
+							</div>
+
+							<div class="mb-4">
+								<label class="form-label">Delivery Option</label>
+
+								<div class="form-check">
+									<input type="radio" name="delivery" class="form-check-input" value="Home Delivery"
+										required>
+									<label class="form-check-label">Home Delivery</label>
+								</div>
+
+								<div class="form-check">
+									<input type="radio" name="delivery" class="form-check-input" value="Store Pickup">
+									<label class="form-check-label">Store Pickup</label>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<button type="submit" class="btn btn-success">
+									Submit Cake Request
+								</button>
+
+								<button type="reset" class="btn btn-secondary ms-2">
+									Reset
+								</button>
+								<br><br>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section><br>
+
+	<footer style="background:#5f374798;">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>@ 2026 Sugar Bliss . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
